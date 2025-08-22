@@ -18,6 +18,14 @@ with st.expander("Our Data"):
   Y = df.species
   Y
 with st.expander("Visualize"):
+  option = st.selectbox(
+    "X-axis?",
+    ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
+)
+    option2 = st.selectbox(
+    "Y-axis?",
+    ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
+)
   st.write("Graph")
-  st.line_chart(df)
+  st.scatter_chart(data= df, x=option, y= option2, color='species')
   
