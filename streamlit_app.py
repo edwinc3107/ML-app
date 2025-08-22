@@ -28,7 +28,7 @@ with st.expander("Visualize"):
 )
   type = st.selectbox(
     "Type",
-    (area_chart,bar_chart,line_chart,scatter_chart),
+    ('area_chart','bar_chart','line_chart','scatter_chart'),
 )
   st.write("Graph")
   
