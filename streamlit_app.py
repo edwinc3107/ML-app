@@ -19,13 +19,20 @@ with st.expander("Our Data"):
   Y
 with st.expander("Visualize"):
   option = st.selectbox(
-    "X-axis?",
+    "X-axis",
     ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
 )
   option2 = st.selectbox(
-    "Y-axis?",
+    "Y-axis",
     ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
 )
+  type = st.selectbox(
+    "Type",
+    (area_chart,bar_chart,line_chart,scatter_chart),
+)
   st.write("Graph")
-  st.scatter_chart(data= df, x=option, y= option2, color='species')
+  
+  st.type(data= df, x=option, y= option2, color='species')
+
+
   
