@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('🐧 Club Penguin - experiment with ML')
 
-st.write('Hello world!')
+st.write('Play around with our factor drivers, to see cool visuals!')
