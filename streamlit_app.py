@@ -26,13 +26,13 @@ with st.expander("Visualize"):
     "Y-axis",
     ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
 )
-  type = st.selectbox(
+  option3 = st.selectbox(
     "Type",
     ('area_chart','bar_chart','line_chart','scatter_chart'),
 )
   st.write("Graph")
   
-  st.type(data= df, x=option, y= option2, color='species')
+  st.option3(data= df, x=option, y= option2, color='species')
 
 
   
