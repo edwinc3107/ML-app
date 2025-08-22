@@ -58,8 +58,7 @@ input_dataframe = pd.DataFrame(data, index=[0])
 
 input_joined = pd.concat([input_dataframe, X], axis = 0)
 
-with st.sidebar:
-  st.header("Input Features")
+with st.expander("Input Features"):
   st.write('Input dataframe')
   input_dataframe
   st.write('New Dataframe')
