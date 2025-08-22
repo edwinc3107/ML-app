@@ -109,8 +109,6 @@ model.fit(input_X,Y)
 prediction = model.predict(input_row)
 probability = model.predict_proba(input_row)
 
-probability
-
 df_predicted = pd.DataFrame(probability)
 df_predicted.columns=["Adelie","Chinstrap","Gentoo"]
 df_predicted.rename(columns ={0: "Adelie",
@@ -119,6 +117,7 @@ df_predicted.rename(columns ={0: "Adelie",
 
 
 st.subheader("Predicted Species:")
+probability
 penguin = np.array(["Adelie","Chinstrap","Gentoo"])
 st.success(str(penguin[prediction][0]))
 
