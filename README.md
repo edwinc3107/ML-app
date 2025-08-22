@@ -1,22 +1,41 @@
-# Machine Learning App
+# 🐧 Club Penguin Classifier – ML Playground  
 
-This is an ML app, built using Python & Streamlit.
+An interactive **machine learning web app** built with [Streamlit](https://streamlit.io/) that predicts penguin species from biological features.  
+Play with sliders and dropdowns to adjust traits like **bill length, flipper size, or body mass**, and instantly see the model’s predictions and probabilities.  
 
-## Demo App
+![Demo Screenshot](demo.png) <!-- replace with actual screenshot if available -->
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+---
 
-## GitHub Codespaces
+## 🚀 Features  
+- 🔍 **Explore the Data**: Visualize penguin dataset with customizable charts (scatter, bar, line, area).  
+- 🎛️ **Interactive Inputs**: Set penguin traits via sidebar sliders & dropdowns.  
+- 🤖 **ML-Powered Predictions**: Random Forest Classifier trained on Palmer Penguins dataset.  
+- 📊 **Probability Dashboard**: Predictions shown with progress bars for interpretability.  
+- 🧹 **Clean Data Pipeline**: Automatic encoding of categorical variables (`island`, `sex`).  
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+---
 
-## Section Heading
+## 📊 Dataset  
+This app uses the **Palmer Penguins dataset**, a popular alternative to Iris for ML demos.  
+Dataset source: [Palmer Penguins on GitHub](https://github.com/allisonhorst/palmerpenguins)  
 
-This is filler text, please replace this with text for this section.
+---
 
-## Further Reading
+## 🛠️ Tech Stack  
+- **Python**  
+- **Streamlit** – UI & interactivity  
+- **scikit-learn** – ML classification  
+- **pandas / numpy** – data wrangling  
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+---
+
+## ⚡ Quickstart  
+
+Clone the repo and install dependencies:  
+
+```bash
+git clone https://github.com/your-username/club-penguin-classifier.git
+cd club-penguin-classifier
+
+pip install -r requirements.txt
