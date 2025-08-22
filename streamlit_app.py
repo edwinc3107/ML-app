@@ -32,7 +32,7 @@ with st.expander("Visualize"):
 )
   st.write("Graph")
   
-  st.option3(data= df, x=option, y= option2, color='species')
+  st.scatter_chart(data= df, x=option, y= option2, color='species')
 
 
   
