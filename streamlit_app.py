@@ -90,8 +90,6 @@ def target(val):
   return map[val]
 
 Y = Y_raw.apply(target)
-Y
-Y_raw
 
 with st.expander("Data Preparation"):
   st.write("Encoded X")
