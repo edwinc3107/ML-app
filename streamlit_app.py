@@ -117,7 +117,7 @@ df_predicted.rename(columns ={0: "Adelie",
 
 
 st.subheader("Predicted Species:")
-probability
+df_predicted
 penguin = np.array(["Adelie","Chinstrap","Gentoo"])
 st.success(str(penguin[prediction][0]))
 
