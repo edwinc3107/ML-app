@@ -111,6 +111,12 @@ probability = model.predict_proba(input_row)
 
 probability
 
+df_predicted = pd.Dataframe(probability)
+df_predicted.rename(columns ={0: "Adelie",
+                             1:"Chinstrap",
+                             2:"Gentoo"})
+
+
 
 
 
