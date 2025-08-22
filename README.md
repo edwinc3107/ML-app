@@ -1,6 +1,6 @@
 # Machine Learning App
 
-This is a ML app, built using Python & Streamlit.
+This is an ML app, built using Python & Streamlit.
 
 ## Demo App
 
