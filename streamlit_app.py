@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+import numpy as np
 
 st.title('🐧 Club Penguin - experiment with ML')
 
@@ -71,12 +73,9 @@ with st.expander("Input Features"):
 
 encode = ['island','sex'] # strings need to be encoded
 df_penguins = pd.get_dummies(input_joined, prefix = encode)
+
+input_X = df_penguins[1:]
 input_row = df_penguins[:1]
-
-
-with st.expander("Data Preparation"):
-  st.write("New Row")
-  input_row
 
 #Encode Y
 
@@ -96,6 +95,25 @@ with st.expander("Data Preparation"):
   input_row
   st.write("Encoded Y")
   Y
+
+#Model Training
+#Because classification type problem - we use RandomForestClassifier
+
+model = RandomForestClassifier()
+
+#fit into model
+model.fit(input_X,Y)
+
+#predict
+
+prediction = model.predict(input_row)
+probability = model.predict_proba(input_row)
+
+probability
+
+
+
+
 
 
 
