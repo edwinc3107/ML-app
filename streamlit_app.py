@@ -5,5 +5,8 @@ st.title('🐧 Club Penguin - experiment with ML')
 
 st.info('Play around with our factor drivers, to see cool visuals')
 
-df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
-df
+with st.expander("Our Data"):
+  st.write('Raw Data')
+  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+  df
+  
