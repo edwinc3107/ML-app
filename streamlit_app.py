@@ -22,7 +22,7 @@ with st.expander("Visualize"):
     "X-axis?",
     ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
 )
-    option2 = st.selectbox(
+  option2 = st.selectbox(
     "Y-axis?",
     ("species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"),
 )
