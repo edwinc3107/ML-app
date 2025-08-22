@@ -3,8 +3,6 @@
 An interactive **machine learning web app** built with [Streamlit](https://streamlit.io/) that predicts penguin species from biological features.  
 Play with sliders and dropdowns to adjust traits like **bill length, flipper size, or body mass**, and instantly see the model’s predictions and probabilities.  
 
-![Demo Screenshot](demo.png) <!-- replace with actual screenshot if available -->
-
 ---
 
 ## 🚀 Features  
