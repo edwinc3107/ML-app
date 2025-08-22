@@ -11,12 +11,12 @@ with st.expander("Our Data"):
   df
 
   st.write("X-axis")
-  X= df.drop("species", axis = 1)
-  X
+  X_raw= df.drop("species", axis = 1)
+  X_raw
 
   st.write("Y-axis")
-  Y = df.species
-  Y
+  Y_raw = df.species
+  Y_raw
 with st.expander("Visualize"):
   option = st.selectbox(
     "X-axis",
@@ -57,14 +57,51 @@ data = {
 
 input_dataframe = pd.DataFrame(data, index=[0])
 
-input_joined = pd.concat([input_dataframe, X], axis = 0)
+input_joined = pd.concat([input_dataframe, X_raw], axis = 0)
 
 with st.expander("Input Features"):
-  st.write('Input dataframe')
+  st.write('Input Dataframe')
   input_dataframe
   st.write('New Dataframe')
   input_joined
-  
+
+#Data Prep
+
+#Encode
+
+encode = ['island','sex'] # strings need to be encoded
+df_penguins = pd.get_dummies(input_joined, prefix = encode)
+input_row = df_penguins[:1]
+
+
+with st.expander("Data Preparation"):
+  st.write("New Row")
+  input_row
+
+#Encode Y
+
+map= {
+  "Adelie":0,
+  "Chinstrap":1,
+  "Gentoo": 2,
+}
+
+def target(val):
+  return map[val]
+
+y = y_raw.apply(target)
+y
+y_raw
+
+with st.expander("Data Preparation"):
+  st.write("Encoded X")
+  input_row
+  st.write("Encoded Y")
+  y
+
+
+
+
   
   
   
