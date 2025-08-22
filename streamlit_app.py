@@ -17,3 +17,7 @@ with st.expander("Our Data"):
   st.write("Y-axis")
   Y = df.species
   Y
+with st.expander("Visualize"):
+  st.write("Graph")
+  st.line_chart(df)
+  
