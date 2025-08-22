@@ -5,22 +5,22 @@ Play with sliders and dropdowns to adjust traits like **bill length, flipper siz
 
 ---
 
-## 🚀 Features  
-- 🔍 **Explore the Data**: Visualize penguin dataset with customizable charts (scatter, bar, line, area).  
-- 🎛️ **Interactive Inputs**: Set penguin traits via sidebar sliders & dropdowns.  
-- 🤖 **ML-Powered Predictions**: Random Forest Classifier trained on Palmer Penguins dataset.  
-- 📊 **Probability Dashboard**: Predictions shown with progress bars for interpretability.  
-- 🧹 **Clean Data Pipeline**: Automatic encoding of categorical variables (`island`, `sex`).  
+## Features  
+- **Explore the Data**: Visualize penguin dataset with customizable charts (scatter, bar, line, area).  
+- **Interactive Inputs**: Set penguin traits via sidebar sliders & dropdowns.  
+- **ML-Powered Predictions**: Random Forest Classifier trained on Palmer Penguins dataset.  
+- **Probability Dashboard**: Predictions shown with progress bars for interpretability.  
+- **Clean Data Pipeline**: Automatic encoding of categorical variables (`island`, `sex`).  
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 This app uses the **Palmer Penguins dataset**, a popular alternative to Iris for ML demos.  
 Dataset source: [Palmer Penguins on GitHub](https://github.com/allisonhorst/palmerpenguins)  
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Python**  
 - **Streamlit** – UI & interactivity  
 - **scikit-learn** – ML classification  
@@ -28,7 +28,7 @@ Dataset source: [Palmer Penguins on GitHub](https://github.com/allisonhorst/palm
 
 ---
 
-## ⚡ Quickstart  
+## Quickstart  
 
 Clone the repo and install dependencies:  
 
