@@ -11,9 +11,9 @@ with st.expander("Our Data"):
   df
 
   st.write("X-axis")
-  X= df.drop("species")
+  X= df.drop("species", axis = 1)
   X
 
   st.write("Y-axis")
-  Y = df['species']
+  Y = df.species
   Y
