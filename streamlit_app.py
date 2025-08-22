@@ -89,15 +89,15 @@ map= {
 def target(val):
   return map[val]
 
-y = y_raw.apply(target)
-y
-y_raw
+Y = Y_raw.apply(target)
+Y
+Y_raw
 
 with st.expander("Data Preparation"):
   st.write("Encoded X")
   input_row
   st.write("Encoded Y")
-  y
+  Y
 
 
 
